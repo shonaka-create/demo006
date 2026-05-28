@@ -316,6 +316,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-ja); font-weight: 700; line-height:
 
 .site-nav--scrolled .nav-link { color: var(--color-text-muted); }
 .site-nav--scrolled .nav-link:hover { color: var(--color-primary-dark); }
+.site-nav--scrolled .nav-cta { color: var(--color-white); }
 
 .nav-cta {
   margin-left: 1rem;
