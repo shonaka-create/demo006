@@ -956,6 +956,11 @@ h1, h2, h3, h4, h5 { font-family: var(--font-ja); font-weight: 700; line-height:
   line-height: 1.6;
 }
 
+.section--dark .process-steps::before  { background: rgba(255,255,255,.18); }
+.section--dark .process-step__num      { border-color: rgba(255,255,255,.15); }
+.section--dark .process-step__title    { color: var(--color-white); }
+.section--dark .process-step__desc     { color: rgba(255,255,255,.60); }
+
 /* ----------------------------------------
    About Section
    ---------------------------------------- */
