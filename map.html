@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社D-ONE アクセス・地図｜神奈川県川崎市を拠点に関東全域でALC工事を行っています。">
+  <title>地図・アクセス｜株式会社D-ONE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23F05A28'/><text x='4' y='24' font-family='Inter' font-weight='900' font-size='20' fill='white'>D</text></svg>">
+  <style>
+    .access-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      box-shadow: var(--shadow-md);
+    }
+    .access-row {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: .9rem;
+      align-items: flex-start;
+    }
+    .access-row:last-child { border-bottom: none; }
+    .access-row__icon { font-size: 1.25rem; flex-shrink: 0; margin-top: .05rem; }
+    .access-row__label { width: 90px; flex-shrink: 0; font-weight: 700; color: var(--color-primary-dark); }
+    .access-row__val { color: var(--color-text-muted); line-height: 1.75; }
+    .map-full { width: 100%; height: 520px; border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); }
+    .map-full iframe { width: 100%; height: 100%; border: 0; }
+    .area-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--color-bg-section);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: .45rem 1rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="site-nav site-nav--scrolled" role="navigation" aria-label="メインナビゲーション">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="D-ONE トップページ">
+      <span class="nav-logo__mark"><span class="mark-d">D</span>-ONE</span>
+      <span class="nav-logo__sub">株式会社</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-link">TOP</a></li>
+      <li><a href="service.html" class="nav-link">事業内容</a></li>
+      <li><a href="about.html"   class="nav-link">会社概要</a></li>
+      <li><a href="recruit.html" class="nav-link">採用情報</a></li>
+      <li><a href="contact.html" class="nav-link btn btn--primary nav-cta">お問い合わせ</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" role="dialog" aria-label="モバイルメニュー" style="display:none; opacity:0;">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-link">TOP</a></li>
+    <li><a href="service.html" class="nav-link">事業内容</a></li>
+    <li><a href="about.html"   class="nav-link">会社概要</a></li>
+    <li><a href="recruit.html" class="nav-link">採用情報</a></li>
+    <li><a href="contact.html" class="btn btn--primary">お問い合わせ</a></li>
+  </ul>
+</div>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80&fit=crop');"></div>
+  <div class="container page-hero__content">
+    <div class="page-hero__label">ACCESS &amp; MAP</div>
+    <h1 class="page-hero__title">地図・アクセス</h1>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="index.html">TOP</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">地図・アクセス</span>
+    </nav>
+  </div>
+</section>
+
+<!-- ========== MAP + ACCESS INFO ========== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">LOCATION</span>
+      <h2 class="section-title">所在地・アクセス</h2>
+      <p class="section-desc">
+        川崎市を拠点に、神奈川・東京を中心とした関東全域に対応しています
+      </p>
+    </div>
+
+    <!-- Full Map -->
+    <div class="map-full reveal" style="margin-bottom: 3rem;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.7246631316894!2d139.6972!3d35.5309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185d9b0bbf3b8b%3A0x8b5f9a5f4a5c9c4a!2z5bKz5bed5biC!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="株式会社D-ONE 所在地マップ"
+      ></iframe>
+    </div>
+
+    <!-- Access details grid -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="reveal">
+      <!-- Access Card -->
+      <div class="access-card">
+        <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-accent);">
+          株式会社D-ONE
+        </h2>
+
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">📍</span>
+          <span class="access-row__label">住所</span>
+          <span class="access-row__val">〒210-XXXX<br>神奈川県川崎市○○区○○ X-X-X</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">🚃</span>
+          <span class="access-row__label">最寄り駅</span>
+          <span class="access-row__val">JR川崎駅 徒歩○分<br><span style="font-size:.8rem; color:var(--color-text-light);">京急川崎駅 徒歩○分</span></span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">🚗</span>
+          <span class="access-row__label">車でのアクセス</span>
+          <span class="access-row__val">首都高速 川崎ICより約○分<br>近隣にコインパーキングあり</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">📞</span>
+          <span class="access-row__label">電話番号</span>
+          <span class="access-row__val"><a href="tel:000-0000-0000" style="font-weight:700; color:var(--color-primary-dark);">000-0000-0000</a><br><span style="font-size:.78rem; color:var(--color-text-light);">受付：平日 8:00〜18:00</span></span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">✉️</span>
+          <span class="access-row__label">メール</span>
+          <span class="access-row__val"><a href="mailto:info@d-one-corp.jp" style="color:var(--color-accent);">info@d-one-corp.jp</a><br><span style="font-size:.78rem; color:var(--color-text-light);">24時間受付（返信は翌営業日以内）</span></span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__icon" aria-hidden="true">🕐</span>
+          <span class="access-row__label">営業時間</span>
+          <span class="access-row__val">平日 8:00〜18:00<br>土日祝 休業（緊急時はご連絡ください）</span>
+        </div>
+
+        <a href="contact.html" class="btn btn--primary w-full mt-md">お問い合わせ・お見積り</a>
+      </div>
+
+      <!-- Service Area -->
+      <div>
+        <div class="access-card" style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 1rem; display:flex; align-items:center; gap:.5rem;">
+            <span aria-hidden="true">🗾</span> 対応エリア
+          </h3>
+          <p style="font-size: .88rem; color: var(--color-text-muted); line-height: 1.85; margin-bottom: 1.25rem;">
+            神奈川県川崎市を拠点に、関東全域に対応しています。ゼネコン・建設会社様のご要望に応じ、遠方の現場もご相談ください。
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: .5rem;">
+            <span class="area-badge">📍 神奈川県（全域）</span>
+            <span class="area-badge">📍 東京都（全域）</span>
+            <span class="area-badge">📍 埼玉県</span>
+            <span class="area-badge">📍 千葉県</span>
+            <span class="area-badge">📍 茨城県</span>
+            <span class="area-badge">📍 栃木県</span>
+            <span class="area-badge">📍 群馬県</span>
+          </div>
+        </div>
+
+        <div class="access-card">
+          <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 1rem; display:flex; align-items:center; gap:.5rem;">
+            <span aria-hidden="true">📌</span> 川崎市内の施工エリア
+          </h3>
+          <div style="display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem;">
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 川崎区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 幸区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 中原区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 高津区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 宮前区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 多摩区</span>
+            <span class="area-badge" style="background:rgba(240,90,40,.08); border-color:rgba(240,90,40,.3); color:var(--color-accent);">● 麻生区</span>
+          </div>
+          <p style="font-size: .8rem; color: var(--color-text-muted); line-height: 1.75;">
+            ※エリア外でもご相談ください。現場の状況によって柔軟に対応いたします。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="cta-banner__title">まずはお気軽にご相談ください</h2>
+    <p class="cta-banner__text">関東全域のALC工事はD-ONEにお任せください。</p>
+    <div class="cta-banner__buttons">
+      <a href="contact.html" class="btn btn--primary btn--lg">お問い合わせフォーム</a>
+      <a href="tel:000-0000-0000" class="btn btn--outline-white btn--lg">📞 000-0000-0000</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo__mark"><span class="mark-d">D</span>-ONE</div>
+          <span class="footer-logo__sub">株式会社</span>
+        </a>
+        <p class="footer-tagline">川崎市拠点・関東全域のALC工事専門会社。<br>登録基幹技能士が率いるチームが<br>高品質な施工をお届けします。</p>
+        <div class="footer-contact-line"><span>📍</span><span>神奈川県川崎市（拠点）</span></div>
+        <div class="footer-contact-line"><span>📞</span><span><strong>000-0000-0000</strong></span></div>
+        <div class="footer-contact-line"><span>✉️</span><span>info@d-one-corp.jp</span></div>
+      </div>
+      <nav aria-label="サービス">
+        <div class="footer-nav-title">SERVICES</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="service.html#new-construction" class="footer-nav-link">ALC新築施工</a></li>
+          <li><a href="service.html#renovation"       class="footer-nav-link">ALC改修工事</a></li>
+          <li><a href="service.html#support"          class="footer-nav-link">元請けサポート</a></li>
+          <li><a href="service.html#process"          class="footer-nav-link">施工の流れ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="会社情報">
+        <div class="footer-nav-title">COMPANY</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="about.html"   class="footer-nav-link">会社紹介</a></li>
+          <li><a href="company.html" class="footer-nav-link">会社概要</a></li>
+          <li><a href="store.html"   class="footer-nav-link">店舗情報</a></li>
+          <li><a href="map.html"     class="footer-nav-link">地図・アクセス</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="採用・お問い合わせ">
+        <div class="footer-nav-title">RECRUIT &amp; CONTACT</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="recruit.html" class="footer-nav-link">採用情報</a></li>
+          <li><a href="contact.html" class="footer-nav-link">お問い合わせ</a></li>
+          <li><a href="terms.html"   class="footer-nav-link">利用規約</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2024 D-ONE Co., Ltd. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="terms.html">プライバシーポリシー・利用規約</a>
+        <a href="map.html">アクセス</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

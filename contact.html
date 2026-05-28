@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -19,10 +19,18 @@
     </a>
     <ul class="nav-links" role="list">
       <li><a href="index.html"   class="nav-link">TOP</a></li>
-      <li><a href="service.html" class="nav-link">事業内容</a></li>
-      <li><a href="about.html"   class="nav-link">会社概要</a></li>
+      <li><a href="service.html" class="nav-link">商品紹介</a></li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">会社情報 <span class="nav-link-arrow">▼</span></a>
+        <div class="nav-dropdown">
+          <a href="about.html"   class="nav-dropdown-link">会社紹介</a>
+          <a href="company.html" class="nav-dropdown-link">会社概要</a>
+          <a href="store.html"   class="nav-dropdown-link">店舗情報</a>
+          <a href="map.html"     class="nav-dropdown-link">地図・アクセス</a>
+        </div>
+      </li>
       <li><a href="recruit.html" class="nav-link">採用情報</a></li>
-      <li><a href="contact.html" class="nav-link btn btn--primary nav-cta" data-page="contact.html">お問い合わせ</a></li>
+      <li><a href="contact.html" class="nav-link btn btn--primary nav-cta">お問い合わせ</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
   </div>
@@ -30,8 +38,11 @@
 <div class="nav-drawer" role="dialog" aria-label="モバイルメニュー" style="display:none; opacity:0;">
   <ul role="list">
     <li><a href="index.html"   class="nav-link">TOP</a></li>
-    <li><a href="service.html" class="nav-link">事業内容</a></li>
-    <li><a href="about.html"   class="nav-link">会社概要</a></li>
+    <li><a href="service.html" class="nav-link">商品紹介</a></li>
+    <li><a href="about.html"   class="nav-link">会社紹介</a></li>
+    <li><a href="company.html" class="nav-link">会社概要</a></li>
+    <li><a href="store.html"   class="nav-link">店舗情報</a></li>
+    <li><a href="map.html"     class="nav-link">地図</a></li>
     <li><a href="recruit.html" class="nav-link">採用情報</a></li>
     <li><a href="contact.html" class="btn btn--primary">お問い合わせ</a></li>
   </ul>
@@ -283,27 +294,27 @@
       <nav aria-label="サービス">
         <div class="footer-nav-title">SERVICES</div>
         <ul class="footer-nav-links" role="list">
+          <li><a href="service.html"                  class="footer-nav-link">商品紹介</a></li>
           <li><a href="service.html#new-construction" class="footer-nav-link">ALC新築施工</a></li>
           <li><a href="service.html#renovation"       class="footer-nav-link">ALC改修工事</a></li>
-          <li><a href="service.html#support"          class="footer-nav-link">元請けサポート</a></li>
           <li><a href="service.html#process"          class="footer-nav-link">施工の流れ</a></li>
         </ul>
       </nav>
       <nav aria-label="会社情報">
         <div class="footer-nav-title">COMPANY</div>
         <ul class="footer-nav-links" role="list">
-          <li><a href="about.html#message"  class="footer-nav-link">代表メッセージ</a></li>
-          <li><a href="about.html#overview" class="footer-nav-link">会社概要</a></li>
-          <li><a href="about.html#team"     class="footer-nav-link">スタッフ紹介</a></li>
-          <li><a href="about.html#access"   class="footer-nav-link">アクセス</a></li>
+          <li><a href="about.html"   class="footer-nav-link">会社紹介</a></li>
+          <li><a href="company.html" class="footer-nav-link">会社概要</a></li>
+          <li><a href="store.html"   class="footer-nav-link">店舗情報</a></li>
+          <li><a href="map.html"     class="footer-nav-link">地図・アクセス</a></li>
         </ul>
       </nav>
-      <nav aria-label="採用・お問い合わせ">
-        <div class="footer-nav-title">RECRUIT &amp; CONTACT</div>
+      <nav aria-label="採用・その他">
+        <div class="footer-nav-title">OTHER</div>
         <ul class="footer-nav-links" role="list">
-          <li><a href="recruit.html#jobs"    class="footer-nav-link">募集職種</a></li>
-          <li><a href="recruit.html#welfare" class="footer-nav-link">福利厚生</a></li>
-          <li><a href="contact.html"         class="footer-nav-link">お問い合わせ</a></li>
+          <li><a href="recruit.html" class="footer-nav-link">採用情報</a></li>
+          <li><a href="contact.html" class="footer-nav-link">お問い合わせ</a></li>
+          <li><a href="terms.html"   class="footer-nav-link">利用規約</a></li>
         </ul>
       </nav>
     </div>

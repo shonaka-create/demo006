@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社D-ONE 店舗情報｜神奈川県川崎市の事務所情報。営業時間・対応エリア・駐車場など。">
+  <title>店舗情報｜株式会社D-ONE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23F05A28'/><text x='4' y='24' font-family='Inter' font-weight='900' font-size='20' fill='white'>D</text></svg>">
+  <style>
+    .info-table { width: 100%; border-collapse: collapse; }
+    .info-table tr { border-bottom: 1px solid var(--color-border); }
+    .info-table tr:first-child { border-top: 1px solid var(--color-border); }
+    .info-table th, .info-table td { padding: 1rem 1.25rem; font-size: .9rem; vertical-align: top; line-height: 1.75; }
+    .info-table th { width: 140px; font-weight: 700; color: var(--color-primary-dark); background: var(--color-bg-light); white-space: nowrap; }
+    .info-table td { color: var(--color-text-muted); }
+    .open-badge { display: inline-block; background: #22c55e; color: #fff; font-size: .7rem; font-weight: 700; padding: .2rem .6rem; border-radius: var(--radius-full); margin-left: .5rem; vertical-align: middle; }
+    .hours-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .3rem; margin-top: 1rem; }
+    .hour-cell { text-align: center; padding: .5rem .25rem; border-radius: var(--radius-sm); font-size: .72rem; }
+    .hour-cell__day { font-weight: 700; margin-bottom: .25rem; }
+    .hour-cell--open { background: rgba(27,58,75,.08); color: var(--color-primary-dark); }
+    .hour-cell--close { background: var(--color-bg-section); color: var(--color-text-light); }
+    .hour-cell--holiday { background: rgba(240,90,40,.1); color: var(--color-accent); }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="site-nav site-nav--scrolled" role="navigation" aria-label="メインナビゲーション">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="D-ONE トップページ">
+      <span class="nav-logo__mark"><span class="mark-d">D</span>-ONE</span>
+      <span class="nav-logo__sub">株式会社</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-link">TOP</a></li>
+      <li><a href="service.html" class="nav-link">商品紹介</a></li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">会社情報 <span class="nav-link-arrow">▼</span></a>
+        <div class="nav-dropdown">
+          <a href="about.html"   class="nav-dropdown-link">会社紹介</a>
+          <a href="company.html" class="nav-dropdown-link">会社概要</a>
+          <a href="store.html"   class="nav-dropdown-link">店舗情報</a>
+          <a href="map.html"     class="nav-dropdown-link">地図・アクセス</a>
+        </div>
+      </li>
+      <li><a href="recruit.html" class="nav-link">採用情報</a></li>
+      <li><a href="contact.html" class="nav-link btn btn--primary nav-cta">お問い合わせ</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" role="dialog" aria-label="モバイルメニュー" style="display:none; opacity:0;">
+  <ul role="list">
+    <li><a href="index.html"   class="nav-link">TOP</a></li>
+    <li><a href="service.html" class="nav-link">商品紹介</a></li>
+    <li><a href="about.html"   class="nav-link">会社紹介</a></li>
+    <li><a href="company.html" class="nav-link">会社概要</a></li>
+    <li><a href="store.html"   class="nav-link">店舗情報</a></li>
+    <li><a href="map.html"     class="nav-link">地図</a></li>
+    <li><a href="recruit.html" class="nav-link">採用情報</a></li>
+    <li><a href="contact.html" class="btn btn--primary">お問い合わせ</a></li>
+  </ul>
+</div>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1560472355-536de3962603?w=1920&q=80&fit=crop');"></div>
+  <div class="container page-hero__content">
+    <div class="page-hero__label">OFFICE INFO</div>
+    <h1 class="page-hero__title">店舗情報</h1>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="index.html">TOP</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">店舗情報</span>
+    </nav>
+  </div>
+</section>
+
+<!-- ========== STORE INFO ========== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">OFFICE INFORMATION</span>
+      <h2 class="section-title">事務所・拠点情報</h2>
+      <p class="section-desc">
+        株式会社D-ONEの川崎事務所の詳細情報です。<br>
+        お気軽にお電話またはご来社ください（事前にご連絡をお願いします）。
+      </p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 400px; gap:3rem; align-items:start;" class="reveal">
+
+      <!-- Main info table -->
+      <div>
+        <h3 style="font-size:1.15rem; font-weight:700; color:var(--color-primary-dark); margin-bottom:1.25rem; padding-bottom:.75rem; border-bottom:2px solid var(--color-accent);">
+          川崎事務所（本拠）<span class="open-badge" aria-label="営業中">OPEN</span>
+        </h3>
+
+        <table class="info-table">
+          <tbody>
+            <tr>
+              <th scope="row">名称</th>
+              <td>株式会社D-ONE 川崎事務所</td>
+            </tr>
+            <tr>
+              <th scope="row">所在地</th>
+              <td>〒210-XXXX<br>神奈川県川崎市○○区○○ X-X-X</td>
+            </tr>
+            <tr>
+              <th scope="row">電話番号</th>
+              <td><a href="tel:000-0000-0000" style="font-weight:700; color:var(--color-primary-dark);">000-0000-0000</a></td>
+            </tr>
+            <tr>
+              <th scope="row">FAX</th>
+              <td>000-0000-0001</td>
+            </tr>
+            <tr>
+              <th scope="row">メール</th>
+              <td><a href="mailto:info@d-one-corp.jp" style="color:var(--color-accent);">info@d-one-corp.jp</a></td>
+            </tr>
+            <tr>
+              <th scope="row">営業時間</th>
+              <td>平日 8:00〜18:00<br><span style="font-size:.8rem; color:var(--color-text-light);">土日祝休業（緊急時はご連絡ください）</span></td>
+            </tr>
+            <tr>
+              <th scope="row">定休日</th>
+              <td>土曜・日曜・祝日<br><span style="font-size:.8rem; color:var(--color-text-light);">※現場の都合により変動あり</span></td>
+            </tr>
+            <tr>
+              <th scope="row">最寄り駅</th>
+              <td>JR川崎駅 徒歩○分<br>京急川崎駅 徒歩○分</td>
+            </tr>
+            <tr>
+              <th scope="row">駐車場</th>
+              <td>あり（○台）<br><span style="font-size:.8rem; color:var(--color-text-light);">満車の場合は近隣コインパーキングをご利用ください</span></td>
+            </tr>
+            <tr>
+              <th scope="row">来社の際</th>
+              <td>事前にお電話またはメールにてご連絡ください</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Hours grid -->
+        <div style="margin-top:2rem;">
+          <h4 style="font-size:.88rem; font-weight:700; color:var(--color-primary-dark); margin-bottom:.75rem;">週間営業時間</h4>
+          <div class="hours-grid">
+            <div class="hour-cell hour-cell--open">
+              <div class="hour-cell__day">月</div>
+              <div>8:00<br>〜<br>18:00</div>
+            </div>
+            <div class="hour-cell hour-cell--open">
+              <div class="hour-cell__day">火</div>
+              <div>8:00<br>〜<br>18:00</div>
+            </div>
+            <div class="hour-cell hour-cell--open">
+              <div class="hour-cell__day">水</div>
+              <div>8:00<br>〜<br>18:00</div>
+            </div>
+            <div class="hour-cell hour-cell--open">
+              <div class="hour-cell__day">木</div>
+              <div>8:00<br>〜<br>18:00</div>
+            </div>
+            <div class="hour-cell hour-cell--open">
+              <div class="hour-cell__day">金</div>
+              <div>8:00<br>〜<br>18:00</div>
+            </div>
+            <div class="hour-cell hour-cell--holiday">
+              <div class="hour-cell__day">土</div>
+              <div>休業</div>
+            </div>
+            <div class="hour-cell hour-cell--holiday">
+              <div class="hour-cell__day">日</div>
+              <div>休業</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div style="display:flex; flex-direction:column; gap:1.5rem;">
+        <!-- Quick contact -->
+        <div style="background:linear-gradient(135deg,var(--color-primary-dark),var(--color-primary)); border-radius:var(--radius-lg); padding:1.75rem; color:#fff;">
+          <div style="font-size:.72rem; font-weight:700; letter-spacing:.15em; color:rgba(255,255,255,.5); font-family:var(--font-en); margin-bottom:.75rem;">QUICK CONTACT</div>
+          <div style="font-size:.9rem; font-weight:600; margin-bottom:.5rem;">お電話でのご相談</div>
+          <a href="tel:000-0000-0000" style="font-family:var(--font-en); font-size:1.6rem; font-weight:900; color:var(--color-accent-light); display:block; margin-bottom:.3rem;">000-0000-0000</a>
+          <div style="font-size:.75rem; color:rgba(255,255,255,.55); margin-bottom:1.25rem;">受付：平日 8:00〜18:00</div>
+          <a href="contact.html" class="btn btn--primary w-full" style="text-align:center;">メールでのお問い合わせ</a>
+        </div>
+
+        <!-- Map mini -->
+        <div style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-md);">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.7246631316894!2d139.6972!3d35.5309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185d9b0bbf3b8b%3A0x8b5f9a5f4a5c9c4a!2z5bKz5bed5biC!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+            width="100%"
+            height="220"
+            style="border:0; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="D-ONE川崎事務所マップ"
+          ></iframe>
+          <div style="padding:.75rem 1rem; background:#fff; border-top:1px solid var(--color-border);">
+            <a href="map.html" style="font-size:.8rem; color:var(--color-accent); font-weight:600;">大きな地図で見る →</a>
+          </div>
+        </div>
+
+        <!-- Services available -->
+        <div style="background:var(--color-bg-light); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:1.5rem;">
+          <div style="font-size:.8rem; font-weight:700; color:var(--color-primary-dark); margin-bottom:1rem; font-family:var(--font-en); letter-spacing:.1em;">SERVICES</div>
+          <ul style="display:flex; flex-direction:column; gap:.5rem;">
+            <li style="display:flex; align-items:center; gap:.5rem; font-size:.85rem; color:var(--color-text-muted);">
+              <span style="color:var(--color-accent); font-weight:700;">✓</span> ALC新築施工
+            </li>
+            <li style="display:flex; align-items:center; gap:.5rem; font-size:.85rem; color:var(--color-text-muted);">
+              <span style="color:var(--color-accent); font-weight:700;">✓</span> ALC改修工事
+            </li>
+            <li style="display:flex; align-items:center; gap:.5rem; font-size:.85rem; color:var(--color-text-muted);">
+              <span style="color:var(--color-accent); font-weight:700;">✓</span> 元請けサポート
+            </li>
+            <li style="display:flex; align-items:center; gap:.5rem; font-size:.85rem; color:var(--color-text-muted);">
+              <span style="color:var(--color-accent); font-weight:700;">✓</span> 関東全域対応
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NOTES ========== -->
+<section class="section section--gray">
+  <div class="container">
+    <div style="max-width:760px; margin-inline:auto;" class="reveal">
+      <h2 style="font-size:1.2rem; font-weight:700; color:var(--color-primary-dark); margin-bottom:1.5rem;">ご来社の際のご注意</h2>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div style="display:flex; gap:1rem; align-items:flex-start; background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-md); padding:1.25rem;">
+          <span style="font-size:1.25rem; flex-shrink:0;" aria-hidden="true">📞</span>
+          <div>
+            <div style="font-weight:600; color:var(--color-primary-dark); margin-bottom:.3rem; font-size:.9rem;">事前予約をお願いします</div>
+            <div style="font-size:.82rem; color:var(--color-text-muted); line-height:1.75;">スタッフが現場に出ている場合がございます。ご来社の際は事前にお電話またはメールにてご予約をお願いします。</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; align-items:flex-start; background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-md); padding:1.25rem;">
+          <span style="font-size:1.25rem; flex-shrink:0;" aria-hidden="true">🚗</span>
+          <div>
+            <div style="font-weight:600; color:var(--color-primary-dark); margin-bottom:.3rem; font-size:.9rem;">お車でお越しの方へ</div>
+            <div style="font-size:.82rem; color:var(--color-text-muted); line-height:1.75;">駐車場は○台ございます。満車の場合は近隣のコインパーキングをご利用ください。詳細はお電話にてご確認ください。</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; align-items:flex-start; background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-md); padding:1.25rem;">
+          <span style="font-size:1.25rem; flex-shrink:0;" aria-hidden="true">🌐</span>
+          <div>
+            <div style="font-weight:600; color:var(--color-primary-dark); margin-bottom:.3rem; font-size:.9rem;">外国語対応について</div>
+            <div style="font-size:.82rem; color:var(--color-text-muted); line-height:1.75;">ミャンマー語・ベトナム語での対応が可能なスタッフが在籍しています。お気軽にご相談ください。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="cta-banner__title">ALC工事のご相談はD-ONEへ</h2>
+    <p class="cta-banner__text">まずはお気軽にお問い合わせください。</p>
+    <div class="cta-banner__buttons">
+      <a href="contact.html" class="btn btn--primary btn--lg">お問い合わせフォーム</a>
+      <a href="tel:000-0000-0000" class="btn btn--outline-white btn--lg">📞 000-0000-0000</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo__mark"><span class="mark-d">D</span>-ONE</div>
+          <span class="footer-logo__sub">株式会社</span>
+        </a>
+        <p class="footer-tagline">川崎市拠点・関東全域のALC工事専門会社。<br>登録基幹技能士が率いるチームが<br>高品質な施工をお届けします。</p>
+        <div class="footer-contact-line"><span>📍</span><span>神奈川県川崎市（拠点）</span></div>
+        <div class="footer-contact-line"><span>📞</span><span><strong>000-0000-0000</strong></span></div>
+        <div class="footer-contact-line"><span>✉️</span><span>info@d-one-corp.jp</span></div>
+      </div>
+      <nav aria-label="サービス">
+        <div class="footer-nav-title">SERVICES</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="service.html" class="footer-nav-link">商品紹介（事業内容）</a></li>
+          <li><a href="service.html#new-construction" class="footer-nav-link">ALC新築施工</a></li>
+          <li><a href="service.html#renovation"       class="footer-nav-link">ALC改修工事</a></li>
+          <li><a href="service.html#process"          class="footer-nav-link">施工の流れ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="会社情報">
+        <div class="footer-nav-title">COMPANY</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="about.html"   class="footer-nav-link">会社紹介</a></li>
+          <li><a href="company.html" class="footer-nav-link">会社概要</a></li>
+          <li><a href="store.html"   class="footer-nav-link">店舗情報</a></li>
+          <li><a href="map.html"     class="footer-nav-link">地図・アクセス</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="採用・その他">
+        <div class="footer-nav-title">OTHER</div>
+        <ul class="footer-nav-links" role="list">
+          <li><a href="recruit.html" class="footer-nav-link">採用情報</a></li>
+          <li><a href="contact.html" class="footer-nav-link">お問い合わせ</a></li>
+          <li><a href="terms.html"   class="footer-nav-link">利用規約</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2024 D-ONE Co., Ltd. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="terms.html">プライバシーポリシー・利用規約</a>
+        <a href="map.html">アクセス</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
